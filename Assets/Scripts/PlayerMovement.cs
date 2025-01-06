@@ -37,13 +37,14 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
-        
-        if(isGrounded && _rb.bodyType != RigidbodyType2D.Static)
+        if (_rb.velocity.y < -.1f)
+        {
+            _movementState = MovementState.falling;
+            isGrounded = false;
+        }
+
+        if (isGrounded && _rb.bodyType != RigidbodyType2D.Static)
             _movementState = MovementState.idle;
-        else
-            if (_rb.velocity.y < -.1f)
-                _movementState = MovementState.falling;
-        
 
         if (Input.GetButton("Horizontal") && _rb.bodyType != RigidbodyType2D.Static)
             Run();

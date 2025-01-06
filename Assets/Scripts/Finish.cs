@@ -22,11 +22,13 @@ public class Finish : MonoBehaviour
      
     private void CompleteLevel()
     {
-        int level = SceneManager.GetActiveScene().buildIndex;
-
-        if (level == 2)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        if (SceneManager.GetActiveScene().buildIndex != (int)Scenes.Level2)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        }
         else
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        {
+            SceneManager.LoadScene((int)Scenes.StartMenu);
+        }
     }
 }
