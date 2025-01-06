@@ -401,7 +401,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 532af2fb64581fe49ab524745ac8c9ab, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.34
   m_Pitch: 1
@@ -497,7 +497,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e90526c857bcca74c8bc01cb52ca18d2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.59
   m_Pitch: 1
@@ -593,7 +593,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4b4dd7245f6104c8c8eb07ccf6b386ed, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b6a8f2a10baa6ac4bac342f2cd6c9634, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.73
   m_Pitch: 1
@@ -58104,6 +58104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint
       objectReference: {fileID: 0}
+    - target: {fileID: 8711970251063121109, guid: e2728335980aff0438a86db247b3abb9, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6b4ecf278ffa29744809c72adae804e7, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
